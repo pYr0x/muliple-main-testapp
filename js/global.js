@@ -1,4 +1,5 @@
-// import "muliple-main-testapp/components/header-login/";
-import $ from "jquery";
+import append from './utils/append-component';
 
-$('body').append('hallo');
+import "muliple-main-testapp/components/header-login/";
+
+append('#navbar', '<x-header-login/>');

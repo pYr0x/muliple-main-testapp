@@ -6,6 +6,47 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Julian Kern",
+  "license": "ISC",
+  "dependencies": {
+    "can": "^2.3.23",
+    "steal": "^0.16.2"
+  },
+  "devDependencies": {
+    "steal-tools": "^0.16.2"
+  },
+  "system": {
+    "directories": {
+      "lib": "js"
+    },
+    "npmAlgorithm": "flat",
+    "meta": {
+      "jquery": {
+        "format": "global",
+        "exports": "$"
+      }
+    },
+    "map": {
+    },
+    "paths": {
+      "jquery": "//code.jquery.com/jquery-2.2.1.min.js"
+    },
+    "envs": {
+      "build": {
+        "map": {}
+      },
+      "window-development": {
+        "paths": {}
+      },
+      "window-production": {
+        "map": {},
+        "paths": {
+          "jquery": "//code.jquery.com/jquery-2.2.1.min.js"
+        }
+      }
+    },
+    "npmIgnore": [
+      "devDependencies"
+    ]
+  }
 }
